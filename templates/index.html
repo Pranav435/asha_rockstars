@@ -1,0 +1,43 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<title>Asha_rockstars, Home</title>
+<style>
+body {
+background:#0676af;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+color:#fff;
+height:100%;
+font-size:18px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="../static/index.css">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf8"/>      
+</head>
+<body>
+<div class="container">
+<h1>Welcome to Asha_Rockstars!</h1>
+<p class="flow-text">The one stop for all Asha's rockstar kids.</p>
+<nav>
+<div class="nav-wrapper blue">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a href="{{url_for("highlights")}}">Highlights</a></li>
+<li><a href="{{url_for("render_register")}}">Register for Asha rockstars!</a></li>
+<li><a href="{{ url_for("contact")}}">Contact Asha</a></li>
+<li><a href="{{url_for("render_admin")}}">Admin panel</a>
+</ul>
+</div>
+</nav>
+<h2>What is this?</h2>
+<p class="flow-text">This is the central WebSite for Asha rockstars, the dance class taken by Asha Savla</p>
+<h2>Wait wait dude, who is Asha Savla?</h2>
+<p>Asha Savla is a 45 year old dance teacher living in Bangalore, India. She trained for Bharatanatyam way back in the late 1990's, successfully passing up to the 7th exam, Visharat. She now teaches Boliwood and contemporary dance to students aged 3 to 7.</p>
+<footer>
+<p>Copyright Asha Rockstars, 2017-2020. All rights reserved. This WebSite is made and owned by Asha Rockstars, and can not be claimed by or used by any other firm.</p>
+</footer>
+</div>
+</body>
+</html>
