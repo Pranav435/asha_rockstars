@@ -36,7 +36,7 @@ def register():
 	server.starttls()
 	server.login("bots.asha.rockstars@gmail.com", "Ps180602")
 	server.sendmail("bots.asha.rockstars@gmail.com", flask.request.form.get("email"), "Oh hi!\nCongratulations! We just got your registration for Asha Rockstars! Here's what we got from you:\nYour child's name is "+flask.request.form.get("name")+".\nYour child is "+str(flask.request.form.get("age"))+".\nYour phone number is: "+str(flask.request.form.get("phone"))+".\nWe will get in personal contact with you shortly!\nLove\nAsha_Rockstars_Bot!")
-	server.sendmail("bots.asha.rockstars@gmail.com", "savlaasha75@gmail.com, "Oh hi!\nCongratulations! We just got your registration for Asha Rockstars! Here's what we got from you:\nYour child's name is "+flask.request.form.get("name")+".\nYour child is "+str(flask.request.form.get("age"))+".\nYour phone number is: "+str(flask.request.form.get("phone"))+".\nWe will get in personal contact with you shortly!\nLove\nAsha_Rockstars_Bot!")
+	server.sendmail("bots.asha.rockstars@gmail.com", "savlaasha75@gmail.com", "Oh hi!\nCongratulations! We just got your registration for Asha Rockstars! Here's what we got from you:\nYour child's name is "+flask.request.form.get("name")+".\nYour child is "+str(flask.request.form.get("age"))+".\nYour phone number is: "+str(flask.request.form.get("phone"))+".\nWe will get in personal contact with you shortly!\nLove\nAsha_Rockstars_Bot!")
 	server.quit()
 	return message
 @app.route("/highlights")
